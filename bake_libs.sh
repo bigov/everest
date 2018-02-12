@@ -15,7 +15,7 @@ fi
 SRC_DIR=`pwd`
 DEST="${SRC_DIR}/3rdparty/staticlib"
 
-OPTIONS="--enable-debug --enable-cxx11 --disable-shared --enable-utf8only\
+OPTIONS="--disable-debug --enable-cxx11 --disable-shared --enable-utf8only\
  --disable-compat30 --with-libjpeg=builtin --with-libpng=builtin\
  --with-regex=builtin --with-libtiff=builtin --with-zlib=builtin\
  --with-expat=builtin"

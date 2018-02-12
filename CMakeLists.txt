@@ -25,8 +25,8 @@ SET( SRC_FILES
   ${SRC_DIR}/assets.rc )
 endif()
 
-SET( CMAKE_CXX_FLAGS "-D_FILE_OFFSET_BITS=64 -O2 -Wall -Wundef\
- -Wunused-parameter -Wno-ctor-dtor-privacy -Woverloaded-virtual"
+SET( CMAKE_CXX_FLAGS "-D_FILE_OFFSET_BITS=64 -DwxDEBUG_LEVEL=0 -O2 -Wall\
+ -Wundef -Wunused-parameter -Wno-ctor-dtor-privacy -Woverloaded-virtual"
 )
 
 ## Установка параметров для сборки на Linux
