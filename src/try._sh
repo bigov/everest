@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm ./richtext
+rm ./richtext_richtext.o
+
+g++ -c -o richtext_richtext.o -D__WXGTK__ -Wall -Wundef -Wunused-parameter -Wno-ctor-dtor-privacy -Woverloaded-virtual  -D_FILE_OFFSET_BITS=64 -I/home/ib/files/dev_CPP/EveRest/3rdparty/staticlib/lib/wx/include/gtk2-unicode-static-3.1 -I/home/ib/files/dev_CPP/EveRest/3rdparty/wxWidgets/include -pthread -ggdb -O2 richtext.cpp
+
+g++ -o richtext richtext_richtext.o -L/home/ib/files/dev_CPP/EveRest/3rdparty/staticlib/lib -pthread -lwx_gtk2u_richtext-3.1 -lwx_gtk2u_adv-3.1 -lwx_gtk2u_html-3.1 -lwx_gtk2u_core-3.1 -lwx_baseu_xml-3.1 -lwx_baseu-3.1 -lwxtiff-3.1 -lwxjpeg-3.1 -lwxpng-3.1 -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lfontconfig -lfreetype -lgthread-2.0 -lglib-2.0 -lX11 -lXxf86vm -lSM -lnotify -lXtst -lwxzlib-3.1 -lwxregexu-3.1 -lwxexpat-3.1 -ldl -lsecret-1 -lm
