@@ -72,15 +72,15 @@ bool app::OnInit()
   // create the main application window
   wxSize size = wxGetDisplaySize();
   size.Scale(0.75, 0.75);
-  frame *Frame = new frame(wxT("wxRichTextCtrl Sample"), wxID_ANY,
+  frame *Frame = new frame(wxT("EveRest text editor"), wxID_ANY,
                                  wxDefaultPosition, size);
 
 #if wxUSE_PRINTING_ARCHITECTURE
   m_printing->SetParentWindow(Frame);
 #endif
 
-  // and show it (the frames, unlike simple controls, are not shown when
-  // created initially)
+  // and show it (the frames, unlike simple controls,
+  // are not shown when created initially)
   Frame->Show(true);
 
   // success: wxApp::OnRun() will be called which will enter the main message

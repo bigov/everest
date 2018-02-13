@@ -136,7 +136,7 @@ frame::frame(const wxString& title, wxWindowID id, const wxPoint& pos,
     if ( !is_pda )
     {
         CreateStatusBar(2);
-        SetStatusText(wxT("Welcome to wxRichTextCtrl!"));
+        SetStatusText(wxT("Welcome to EveRest!"));
     }
 #endif
 
